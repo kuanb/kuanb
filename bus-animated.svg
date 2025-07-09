@@ -1,0 +1,41 @@
+<svg width="640" height="160" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bus-text {
+        font-family: 'Courier New', monospace;
+        font-size: 14px;
+        fill: #333;
+        font-weight: bold;
+      }
+    </style>
+  </defs>
+  
+  <!-- Bus group that will be animated -->
+  <g class="bus-group">
+    <!-- Bus ASCII art as text elements -->
+    <text x="0" y="30" class="bus-text"> .-----------------------'  |</text>
+    <text x="0" y="50" class="bus-text">/| _ .---. .---. .---. .---.|</text>
+    <text x="0" y="70" class="bus-text">|j||||___| |___| |___| |___||</text>
+    <text x="0" y="90" class="bus-text">|=|||=======================|</text>
+    <text x="0" y="110" class="bus-text">[_|j||(O)\__________|(O)\___]</text>
+    
+    <!-- Animation: Move the bus from right to left -->
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      values="640,0; -350,0"
+      dur="6s"
+      repeatCount="indefinite"/>
+  </g>
+  
+  <!-- Ground line -->
+  <line x1="0" y1="130" x2="640" y2="130" stroke="#666" stroke-width="2"/>
+  
+  <!-- Optional: Add some clouds in the background -->
+  <g class="clouds" opacity="0.3">
+    <text x="100" y="25" class="bus-text" fill="#ccc">☁</text>
+    <text x="200" y="20" class="bus-text" fill="#ccc">☁</text>
+    <text x="400" y="30" class="bus-text" fill="#ccc">☁</text>
+    <text x="500" y="25" class="bus-text" fill="#ccc">☁</text>
+  </g>
+</svg>
