@@ -28,14 +28,5 @@
       repeatCount="indefinite"/>
   </g>
   
-  <!-- Ground line -->
-  <line x1="0" y1="130" x2="640" y2="130" stroke="#666" stroke-width="2"/>
-  
-  <!-- Optional: Add some clouds in the background -->
-  <g class="clouds" opacity="0.3">
-    <text x="100" y="25" class="bus-text" fill="#ccc">☁</text>
-    <text x="200" y="20" class="bus-text" fill="#ccc">☁</text>
-    <text x="400" y="30" class="bus-text" fill="#ccc">☁</text>
-    <text x="500" y="25" class="bus-text" fill="#ccc">☁</text>
-  </g>
+
 </svg>
